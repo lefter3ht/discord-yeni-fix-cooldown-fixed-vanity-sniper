@@ -1,1 +1,2 @@
-# discord-yeni-fix-cooldown-fixed-vanity-sniper
+Bizim attığımız methodlarla taktiklerle kendilerini bir sikim sanan slow itlere inat gelsin bu.:) Büyük büyük değişiklik sniper devrinin bitişi gibi ergence terimler kullananlara gelsin; Bukadar kolay bir fixe yeni bir çağ devirmiş gibi davranmanız ne kadarda üzücü.
+Method yakında fix yer zaten yenisinide atarız bi sonraki kod rust h3 hyperium olacak haberiniz olsun şimdi bir daha baş kaldırmadan önce 1 değil, 2 değil, 3 kere düşünün.
